@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ff6e7f, #bfe9ff);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="date"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            font-size: 18px;
+            margin-top: 5px;
+        }
+        
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+        
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 18px;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Анкета</h1>
+    <form>
+        <label>
+            Имя:
+            <input type="text" name="name" required>
+        </label>
+        <label>
+            Адрес электронной почты:
+            <input type="email" name="email" required>
+        </label>
+        <label>
+            Дата рождения:
+            <input type="date" name="birthday" required>
+        </label>
+        <button type="submit">Отправить</button>
+    </form>
+    <a href="product.html">Перейти к продукту</a>
+</body>
+</html>
+
